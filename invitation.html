@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="You're invited to celebrate our special day on 13 November 2026 in Madurai."
+    />
+    <meta property="og:title" content="Sundar S ❤️ Harini S — Wedding Invitation" />
+    <meta
+      property="og:description"
+      content="You're invited to celebrate our special day on 13 November 2026 in Madurai."
+    />
+    <meta property="og:image" content="assets/images/couple.svg" />
+    <meta property="og:url" content="https://example.com" />
+    <meta property="og:type" content="website" />
+    <title>Sundar S ❤️ Harini S — Wedding Invitation</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page-invitation" data-page="invitation">
+    <div class="decor decor-left" aria-hidden="true">✦</div>
+    <div class="decor decor-right" aria-hidden="true">✦</div>
+
+    <main class="invitation-page">
+      <section class="section-card reveal-section is-visible">
+        <p class="section-tag">SAVE THE DATE</p>
+
+        <div class="names-block" aria-label="Couple names">
+          <span data-config="groomName">Sundar S</span>
+          <span class="heart-inline" aria-hidden="true">❤️</span>
+          <span data-config="brideName">Harini S</span>
+        </div>
+
+        <div class="date-block">
+          <p class="date-line">13 NOVEMBER 2026</p>
+          <p class="location-line">MADURAI</p>
+        </div>
+
+        <div class="photo-wrap">
+          <img src="assets/images/couple2.jpg" data-image-config="secondaryCouple" alt="Sundar and Harini in a romantic portrait" class="invitation-photo" />
+        </div>
+
+        <div class="primary-actions">
+          <button class="primary-btn next-button" type="button" data-next-target="#locationSection">
+            NEXT →
+          </button>
+        </div>
+      </section>
+
+      <section id="locationSection" class="section-card reveal-section">
+        <p class="section-tag">JOIN US</p>
+        <h2 class="section-heading">Wedding Venue</h2>
+
+        <div class="venue-card">
+          <p class="venue-name" data-config="venueName">YOUR VENUE</p>
+          <p class="venue-address" data-config="venueAddress">MADURAI, TAMIL NADU</p>
+        </div>
+
+        <div class="primary-actions">
+          <a
+            id="mapsLink"
+            class="primary-btn maps-btn"
+            href="https://maps.google.com/?q=Madurai+Tamil+Nadu"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open wedding venue in Google Maps"
+          >
+            📍 OPEN GOOGLE MAPS
+          </a>
+        </div>
+
+        <div class="primary-actions">
+          <button class="primary-btn next-button" type="button" data-next-target="#countdownSection">
+            NEXT →
+          </button>
+        </div>
+      </section>
+
+      <section id="countdownSection" class="section-card reveal-section">
+        <p class="section-tag">COUNTING DOWN</p>
+        <h2 class="section-heading">COUNTING DOWN TO OUR BIG DAY</h2>
+
+        <div id="countdown" class="countdown" aria-live="polite">
+          <div class="count-box">
+            <span data-countdown="days">00</span>
+            <small>DAYS</small>
+          </div>
+          <div class="count-box">
+            <span data-countdown="hours">00</span>
+            <small>HOURS</small>
+          </div>
+          <div class="count-box">
+            <span data-countdown="minutes">00</span>
+            <small>MINUTES</small>
+          </div>
+          <div class="count-box">
+            <span data-countdown="seconds">00</span>
+            <small>SECONDS</small>
+          </div>
+        </div>
+
+        <p id="countdownMessage" class="countdown-message" aria-live="polite">TODAY IS THE DAY ❤️</p>
+      </section>
+
+      <section class="section-card footer-card">
+        <div class="footer-actions">
+          <button type="button" class="secondary-btn" id="saveDateBtn">📅 SAVE THE DATE</button>
+          <a
+            class="secondary-btn whatsapp-btn"
+            id="whatsappShare"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Share invitation on WhatsApp"
+          >
+            SHARE INVITATION ❤️
+          </a>
+        </div>
+
+        <button class="music-toggle" type="button" id="musicToggle" aria-label="Toggle music">
+          🎵
+        </button>
+      </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
